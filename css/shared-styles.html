@@ -1,0 +1,42 @@
+<!-- shared styles for all elements and index.html -->
+<dom-module id="shared-styles">
+    <template>
+        <style>
+            .page-title {
+                @apply(--paper-font-display4);
+            }
+            paper-menu a > *, paper-menu paper-item > *, paper-menu paper-icon-item > * {
+                pointer-events: none;
+            }
+            @media (max-width: 600px) {
+                .page-title {
+                    font-size: 24px!important;
+                }
+            }
+            .red-100 {
+                background: var(--google-red-100);
+            }
+            .yellow-100 {
+                background: var(--google-yellow-100);
+            }
+            .blue-100 {
+                background: var(--google-blue-100);
+            }
+            .green-100 {
+                background: var(--google-green-100);
+            }
+            .red-300 {
+                background: var(--google-red-300);
+            }
+            .yellow-300 {
+                background: var(--google-yellow-300);
+            }
+            .blue-300 {
+                background: var(--google-blue-300);
+            }
+            .green-300 {
+                background: var(--google-green-300);
+            }
+        </style>
+    </template>
+</dom-module>
