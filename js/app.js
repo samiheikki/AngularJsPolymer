@@ -15,6 +15,10 @@ angularPolymerApp.config(['$routeProvider',
                 templateUrl: 'app/partials/vaadin.html',
                 controller: 'VaadinCtrl'
             }).
+            when('/app/map', {
+                templateUrl: 'app/partials/map.html',
+                controller: 'MapCtrl'
+            }).
             otherwise({
                 redirectTo: '/app'
             });

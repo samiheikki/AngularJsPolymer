@@ -25,3 +25,9 @@ angularPolymerControllers.controller('VaadinCtrl', ['$scope', '$routeParams', '$
         });
     }
 ]);
+
+angularPolymerControllers.controller('MapCtrl', ['$scope', '$routeParams', '$http', '$location',
+    function ($scope, $routeParams, $http, $location) {
+        console.log($scope);
+    }
+]);

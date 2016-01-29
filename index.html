@@ -34,6 +34,10 @@
                 <iron-icon icon="home"></iron-icon>
                 <span>Home</span>
             </a>
+            <a href="#/app/map">
+                <iron-icon icon="map"></iron-icon>
+                <span>map</span>
+            </a>
         </paper-menu>
     </paper-header-panel>
     <paper-scroll-header-panel main>
@@ -42,12 +46,14 @@
 
             <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
             <span class="flex"></span>
-            <div class="flex title">Title</div>
+            <div class="flex title">AngularJs Polymer Boost Jump</div>
 
         </paper-toolbar>
 
         <div class="content">
-            <div ng-view class="view-frame widget-content" id="ng-main-view"></div>
+            <div ng-view class="view-frame widget-content" id="ng-main-view">
+                <paper-spinner active style="left:50%; top: 50%;"></paper-spinner>
+            </div>
         </div>
 
     </paper-scroll-header-panel>
